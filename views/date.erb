@@ -5,7 +5,9 @@
   </head>
   <body>
     <h1>Today</h1>
-    <p><%="Goodbye " + %></p>
+    <% require 'date' %>
+    <% today = Date.today.strftime("%A, %B %d, %Y")%>
+    <p><%= "The date is #{today}"%></p>
   </body>
   
 </html>
